@@ -57,7 +57,7 @@ export default function Wanted() {
               href="#"
               className="list-group-item list-group-item-action"
               key={index}
-              style={{ border: "solid black" }}
+              style={{ border: "solid black", margin: 2 }}
             >
               {w}
             </a>
@@ -77,7 +77,7 @@ export default function Wanted() {
               href="#"
               className="list-group-item list-group-item-action"
               key={index}
-              style={{ border: "solid black" }}
+              style={{ border: "solid black", margin: 2 }}
             >
               {w}
             </a>

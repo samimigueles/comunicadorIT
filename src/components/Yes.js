@@ -15,7 +15,7 @@ const Yes = () => {
     const context = canvas.getContext("2d");
 
     draw(context);
-  }, [draw]);
+  }, []);
 
   return (
     <>

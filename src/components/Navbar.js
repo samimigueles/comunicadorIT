@@ -68,13 +68,13 @@ const Navbar = () => {
       >
         <ul className="navbar-nav mr-auto flex">
           {abc.map((l, index) => (
-            <li style={{ color: "white", border: 25, padding: 10 }} key={index}>
-              <h4>{l}</h4>
+            <li style={{ color: "white", border: 25, padding: 2 }} key={index}>
+              <a href="#" className='nav-link'><h4>{l}</h4></a>
             </li>
           ))}
           {nums.map((n, index) => (
-            <li style={{ color: "white", border: 25, padding: 10 }} key={index}>
-              <h4>{n}</h4>
+            <li style={{ color: "white", border: 25, padding: 2 }} key={index}>
+              <a href="#" className='nav-link'><h4>{n}</h4></a>
             </li>
           ))}
         </ul>

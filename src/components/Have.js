@@ -16,13 +16,14 @@ export default function Have() {
           left: 220,
         }}
       >
-        <h3 style={{ backgroundColor: "green", border: "solid" }}>Tengo</h3>
+        <h3 style={{ backgroundColor: "green", border: "solid", position: "relative",
+          left: 2}}>Tengo</h3>
         {having.map((f, index) => (
           <a
             href="#"
             className="list-group-item list-group-item-action"
             key={index}
-            style={{border:'solid black'}}
+            style={{ border: "solid black", margin: 2 }}
           >
             {f}
           </a>
@@ -38,13 +39,14 @@ export default function Have() {
           left: 220,
         }}
       >
-        <h3 style={{ backgroundColor: "blue", border: "solid" }}>Llamar</h3>
+        <h3 style={{ backgroundColor: "blue", border: "solid", position: "relative",
+          left: 2 }}>Llamar</h3>
         {call.map((f, index) => (
           <a
             href="#"
             className="list-group-item list-group-item-action"
             key={index}
-            style={{border:'solid black'}}
+            style={{ border: "solid black", margin: 2 }}
           >
             {f}
           </a>

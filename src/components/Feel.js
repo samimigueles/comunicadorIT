@@ -32,7 +32,7 @@ export default function Feel() {
           href="#"
           className="list-group-item list-group-item-action"
           key={index}
-          style={{border:'solid black'}}
+          style={{border:'solid black', margin: 2 }}
         >
           {f}
         </a>
