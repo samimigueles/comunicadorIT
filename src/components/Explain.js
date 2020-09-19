@@ -45,7 +45,12 @@ export default function Explain() {
       </div>
       <div
         className="row"
-        style={{ padding: 3, position: "relative", left: 3, textAlign:'center' }}
+        style={{
+          padding: 3,
+          position: "relative",
+          left: 3,
+          textAlign: "center",
+        }}
       >
         {question2.map((q, index) => (
           <div className="col">
@@ -54,7 +59,7 @@ export default function Explain() {
               className="btn btn-outline-success"
               key={index}
               href="#"
-              style={{ border: "solid green", width: 90, textAlign:'right' }}
+              style={{ border: "solid green", width: 90, textAlign: "center" }}
             >
               {q}
             </button>
