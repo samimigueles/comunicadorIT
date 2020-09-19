@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from "react";
 
 const Yes = () => {
-  const canvasRef = useRef(null);
+  /*  const canvasRef = useRef(null);
 
   const draw = (ctx) => {
     ctx.fillStyle = "red";
@@ -15,7 +15,7 @@ const Yes = () => {
     const context = canvas.getContext("2d");
 
     draw(context);
-  }, []);
+  }, []); */
 
   return (
     <>
@@ -23,14 +23,21 @@ const Yes = () => {
         style={{
           textAlign: "center",
           position: "relative",
-          top: 130,
-          right: 970,
+          bottom: 450,
+          left: 10,
+          borderRadius: 50,
         }}
       >
-        <a href="#">
-          <canvas ref={canvasRef}  width="100" height="100" />
-        </a>
-        <h1>SI</h1>
+        {/* <a href="#">
+          <canvas ref={canvasRef} width="100" height="100" />
+        </a> */}
+        <button
+          href="#"
+          className="btn btn-outline-success"
+          style={{border: 'solid green', borderRadius: 90, width: 150, height: 150 }}
+        >
+          <h1>SI</h1>
+        </button>
       </div>
     </>
   );

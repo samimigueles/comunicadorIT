@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from "react";
 
 const Not = () => {
-  const canvasRef = useRef(null);
+  /* const canvasRef = useRef(null);
 
   const draw = (ctx) => {
     ctx.fillStyle = "blue";
@@ -16,7 +16,7 @@ const Not = () => {
 
     draw(context);
   }, []);
-
+ */
   return (
     <>
       <div
@@ -24,13 +24,19 @@ const Not = () => {
           textAlign: "center",
           position: "relative",
           bottom: 250,
-          left: 60,
+          right: 140,
         }}
       >
-        <a href="#">
+        {/* <a href="#">
           <canvas ref={canvasRef} width="100" height="100" ></canvas>
-        </a>
-        <h1>NO</h1>
+        </a> */}
+        <button
+          href="#"
+          className="btn btn-outline-danger"
+          style={{border: 'solid red', borderRadius: 90, width: 150, height: 150 }}
+        >
+          <h1>NO</h1>
+        </button>
       </div>
     </>
   );
