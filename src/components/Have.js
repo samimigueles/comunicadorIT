@@ -16,17 +16,25 @@ export default function Have() {
           left: 220,
         }}
       >
-        <h3 style={{ backgroundColor: "green", border: "solid", position: "relative",
-          left: 2}}>Tengo</h3>
+        <h3
+          style={{
+            backgroundColor: "springgreen",
+            border: "solid",
+            position: "relative",
+            left: 2,
+          }}
+        >
+          Tengo
+        </h3>
         {having.map((f, index) => (
-          <a
+          <button
             href="#"
-            className="list-group-item list-group-item-action"
+            className="btn btn-outline-success"
             key={index}
-            style={{ border: "solid black", margin: 2 }}
+            style={{ border: "solid green", margin: 2 }}
           >
             {f}
-          </a>
+          </button>
         ))}
       </div>
       <div
@@ -39,17 +47,25 @@ export default function Have() {
           left: 220,
         }}
       >
-        <h3 style={{ backgroundColor: "blue", border: "solid", position: "relative",
-          left: 2 }}>Llamar</h3>
+        <h3
+          style={{
+            backgroundColor: "skyblue",
+            border: "solid",
+            position: "relative",
+            left: 2,
+          }}
+        >
+          Llamar
+        </h3>
         {call.map((f, index) => (
-          <a
+          <button
             href="#"
-            className="list-group-item list-group-item-action"
+            className="btn btn-outline-info"
             key={index}
-            style={{ border: "solid black", margin: 2 }}
+            style={{ border: "solid skyblue", margin: 2 }}
           >
             {f}
-          </a>
+          </button>
         ))}
       </div>
     </div>

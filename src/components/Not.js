@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from "react";
 
-const Not = (props) => {
+const Not = () => {
   const canvasRef = useRef(null);
 
   const draw = (ctx) => {
@@ -15,7 +15,7 @@ const Not = (props) => {
     const context = canvas.getContext("2d");
 
     draw(context);
-  }, [draw]);
+  }, []);
 
   return (
     <>
@@ -23,12 +23,12 @@ const Not = (props) => {
         style={{
           textAlign: "center",
           position: "relative",
-          bottom: 350,
-          right: 745,
+          bottom: 250,
+          left: 60,
         }}
       >
         <a href="#">
-          <canvas ref={canvasRef} {...props} width="100" height="100" />
+          <canvas ref={canvasRef} width="100" height="100" ></canvas>
         </a>
         <h1>NO</h1>
       </div>

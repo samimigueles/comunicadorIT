@@ -2,40 +2,41 @@ import React from "react";
 
 export default function Feel() {
   const feelings = [
-    "comodo",
-    "bien",
-    "mejor",
-    "peor",
-    "triste",
-    "inquieto",
-    "asustado",
-    "cansado",
-    "acalorado",
-    "mareado",
-    "falta de aire",
-    "sucio",
+    "Comodo",
+    "Bien",
+    "Mejor",
+    "Peor",
+    "Triste",
+    "Inquieto",
+    "Asustado",
+    "Cansado",
+    "Acalorado",
+    "Mareado",
+    "Falta de aire",
+    "Sucio",
   ];
 
   return (
     <div
       className="list-group"
       style={{
-        width: 130,
+        width: 150,
         textAlign: "center",
         position: "relative",
         left: 200,
       }}
     >
-      <h3 style={{ backgroundColor: "orange", border: "solid" }}>Me siento</h3>
+      
+        <h3 style={{border:'solid', backgroundColor:'chocolate'}}>Me siento</h3>
       {feelings.map((f, index) => (
-        <a
+        <button
           href="#"
-          className="list-group-item list-group-item-action"
+          className="btn btn-outline-warning"
           key={index}
-          style={{border:'solid black', margin: 2 }}
+          style={{ border: "solid chocolate", margin: 2 }}
         >
           {f}
-        </a>
+        </button>
       ))}
     </div>
   );

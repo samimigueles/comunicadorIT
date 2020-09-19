@@ -15,8 +15,8 @@ export default function Home() {
         className="row"
         style={{
           border: "solid 5px",
-          padding: 5,
-          margin: 5,
+          padding: 2,
+          margin: 10,
           textAlign: "right",
           position: "relative",
           bottom: 50,

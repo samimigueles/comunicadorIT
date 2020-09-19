@@ -1,16 +1,20 @@
 import React from "react";
 
 export default function Explain() {
+  const question = ["¿Porqué?", "¿Quién?", "¿Cómo?"];
+
+  const question2 = ["¿Dónde?", "¿Qué?    ", "¿Cuándo?"];
+
   return (
     <div
       style={{
         textAlign: "center",
         position: "relative",
-        left: 350,
-        bottom: 40,
+        left: 100,
+        top: 320,
       }}
     >
-      <h4
+      <h3
         style={{
           textAlign: "center",
           backgroundColor: "springgreen",
@@ -18,62 +22,44 @@ export default function Explain() {
         }}
       >
         Explicar
-      </h4>
+      </h3>
       <div className="row">
-        <div className="col list-group">
-          <a
-            className="list-group-item list-group-item-action"
-            href="#"
-            style={{ border: "solid black" }}
-          >
-            ¿Porqué?
-          </a>
-        </div>
-        <div className="col list-group">
-          <a
-            className="list-group-item list-group-item-action"
-            href="#"
-            style={{ border: "solid black" }}
-          >
-            ¿Quién?
-          </a>
-        </div>
-        <div className="col list-group">
-          <a
-            className="list-group-item list-group-item-action"
-            href="#"
-            style={{ border: "solid black" }}
-          >
-            ¿Cómo?
-          </a>
-        </div>
-        <div className="col list-group">
-          <a
-            className="list-group-item list-group-item-action"
-            href="#"
-            style={{ border: "solid black" }}
-          >
-            ¿Dónde?
-          </a>
-        </div>
-        <div className="col list-group">
-          <a
-            className="list-group-item list-group-item-action"
-            href="#"
-            style={{ border: "solid black" }}
-          >
-            ¿Qué?
-          </a>
-        </div>
-        <div className="col list-group">
-          <a
-            className="list-group-item list-group-item-action"
-            href="#"
-            style={{ border: "solid black" }}
-          >
-            ¿Cuándo?
-          </a>
-        </div>
+        {question.map((q, index) => (
+          <div className="col">
+            <button
+              href="#"
+              className="btn btn-outline-success"
+              key={index}
+              href="#"
+              style={{
+                width: 90,
+                border: "solid green",
+                position: "relative",
+                left: 2,
+              }}
+            >
+              {q}
+            </button>
+          </div>
+        ))}
+      </div>
+      <div
+        className="row"
+        style={{ padding: 3, position: "relative", left: 3, textAlign:'center' }}
+      >
+        {question2.map((q, index) => (
+          <div className="col">
+            <button
+              href="#"
+              className="btn btn-outline-success"
+              key={index}
+              href="#"
+              style={{ border: "solid green", width: 90, textAlign:'right' }}
+            >
+              {q}
+            </button>
+          </div>
+        ))}
       </div>
     </div>
   );

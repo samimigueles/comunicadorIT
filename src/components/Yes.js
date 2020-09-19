@@ -23,8 +23,8 @@ const Yes = () => {
         style={{
           textAlign: "center",
           position: "relative",
-          bottom: 550,
-          right: 650,
+          top: 130,
+          right: 970,
         }}
       >
         <a href="#">

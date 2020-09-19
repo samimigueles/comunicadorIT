@@ -1,30 +1,30 @@
 import React from "react";
 
 export default function Higienize() {
-  const higinize = ["Cara", "Boca", "Dientes", "Nariz", "Pelos", "Manos"];
+  const higienize = ["Cara", "Boca", "Dientes", "Nariz", "Pelos", "Manos"];
 
   return (
     <div
       className="list-group"
       style={{
-        width: 130,
+        width: 150,
         textAlign: "center",
         position: "relative",
         left: 265,
       }}
     >
-      <h4 style={{ backgroundColor: "skyblue", border: "solid" }}>
+      <h3 style={{ backgroundColor: "skyblue", border: "solid" }}>
         Higienizar
-      </h4>
-      {higinize.map((h, index) => (
-        <a
+      </h3>
+      {higienize.map((h, index) => (
+        <button 
           href="#"
-          className="list-group-item list-group-item-action"
+          className= "btn btn-outline-info" 
           key={index}
-          style={{ border: "solid black", margin: 2 }}
+          style={{ border: "solid skyblue", margin: 2 }}
         >
           {h}
-        </a>
+        </button >
       ))}
     </div>
   );

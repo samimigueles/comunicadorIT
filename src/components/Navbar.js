@@ -24,33 +24,31 @@ const Logo = () => {
 
 const Navbar = () => {
   const abc = [
-    "a",
-    "b",
-    "c",
-    "d",
-    "e",
-    "f",
-    "g",
-    "h",
-    "i",
-    "j",
-    "k",
-    "l",
-    "m",
-    "n",
-    "ñ",
-    "o",
-    "p",
-    "q",
-    "r",
-    "s",
-    "t",
-    "u",
-    "v",
-    "w",
-    "x",
-    "y",
-    "z",
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F",
+    "G",
+    "H",
+    "I",
+    "J",
+    "K",
+    "L",
+    "M",
+    "N",
+    "O",
+    "P",
+    "Q",
+    "R",
+    "S",
+    "U",
+    "V",
+    "W",
+    "X",
+    "Y",
+    "Z",
   ];
 
   const nums = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
@@ -68,13 +66,17 @@ const Navbar = () => {
       >
         <ul className="navbar-nav mr-auto flex">
           {abc.map((l, index) => (
-            <li style={{ color: "white", border: 25, padding: 2 }} key={index}>
-              <a href="#" className='nav-link'><h4>{l}</h4></a>
+            <li style={{ color: "white", border: 25, padding: 1 }} key={index}>
+              <a href="#" className="nav-link">
+                <h4>{l}</h4>
+              </a>
             </li>
           ))}
           {nums.map((n, index) => (
             <li style={{ color: "white", border: 25, padding: 2 }} key={index}>
-              <a href="#" className='nav-link'><h4>{n}</h4></a>
+              <a href="#" className="nav-link">
+                <h4>{n}</h4>
+              </a>
             </li>
           ))}
         </ul>

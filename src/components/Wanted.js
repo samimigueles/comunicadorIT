@@ -53,14 +53,14 @@ export default function Wanted() {
           }}
         >
           {wanted1.map((w, index) => (
-            <a
-              href="#"
-              className="list-group-item list-group-item-action"
+            <button
+            href="#"
+            className="btn btn-outline-warning"
               key={index}
-              style={{ border: "solid black", margin: 2 }}
+              style={{ border: "solid chocolate", margin: 2 }}
             >
               {w}
-            </a>
+            </button>
           ))}
         </div>
         <div
@@ -73,14 +73,14 @@ export default function Wanted() {
           }}
         >
           {wanted2.map((w, index) => (
-            <a
-              href="#"
-              className="list-group-item list-group-item-action"
+            <button
+            href="#"
+            className="btn btn-outline-warning"
               key={index}
-              style={{ border: "solid black", margin: 2 }}
+              style={{ border: "solid chocolate", margin: 2 }}
             >
               {w}
-            </a>
+            </button>
           ))}
         </div>
       </div>
