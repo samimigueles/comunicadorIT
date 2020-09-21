@@ -35,7 +35,7 @@ export default function Wanted() {
           backgroundColor: "chocolate",
           width: 265,
           position: "relative",
-          left: 240,
+          left: 238,
           textAlign: "center",
           border: "solid",
         }}
